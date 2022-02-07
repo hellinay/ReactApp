@@ -19,7 +19,7 @@ function ExpenseForm(params) {
 
     const ExpenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
     params.onSaveExpenseData(ExpenseData);
